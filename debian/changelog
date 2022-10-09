@@ -1,0 +1,293 @@
+kcachegrind (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 15:53:14 +0900
+
+kcachegrind (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 27 Apr 2021 15:41:53 +0900
+
+kcachegrind (4:20.12.0-1) unstable; urgency=medium
+
+  * New upstream release (20.12.0).
+  * Refresh copyright information.
+  * Bump Standards-Version to 4.5.1, no change required.
+  * Refresh upstream metadata.
+  * Removed George Kiagiadakis, Maximiliano Curia, Modestas Vainius from
+    the uploaders, thanks for your work on the package!
+  * Added myself to the uploaders.
+  * Build with hardening=+all build hardening flag.
+  * Borrow minimal upstream signing key from k3b.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 02 Jan 2021 12:10:14 +0100
+
+kcachegrind (4:20.08.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 15 Aug 2020 08:53:58 +0200
+
+kcachegrind (4:20.04.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Nicholas D Steeves ]
+  * Update watch file to use the new upstream release-service.  This allows
+    uscan to find the latest upstream release.
+  * Switch to debhelper-compat 13.
+  * Drop hotshot2calltree from kcachegrind-converters.install
+    (Closes: #936783).
+  * Drop hotshot2calltree.1 from kcachegrind-converters.manpages.
+  * Drop debian/man/hotshot2calltree.1.
+  * Remove reference to hotshot2calltree from debian/man/kcachegrind.1
+    and control.
+  * New upstream release (20.04.3).
+  * Update build-deps from CMakeLists.txt.
+
+  [ Dmitry Shachnev ]
+  * Drop Python dependency to make sure #936783 is really fixed.
+
+  [ Pino Toscano ]
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+  * Add Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0, no changes required.
+  * Explicitly remove hotshot2calltree from the destdir, otherwise dh_missing
+    errors out (as it is not installed).
+
+ -- Pino Toscano <pino@debian.org>  Sun, 02 Aug 2020 18:34:32 +0200
+
+kcachegrind (4:19.08.1-1) unstable; urgency=medium
+
+  [ Scarlett Moore ]
+  * Update VCS entries to salsa.
+
+  [ Maximiliano Curia ]
+  * Add a salsa-ci script
+  * Bump debhelper build-dep and compat to 12.
+  * Bump Standards-Version to 4.4.0.
+  * New upstream release (19.08.1).
+  * Drop kde-l10n breaks/replaces, fixed versions already in stable
+  * Update build-deps and deps with the info from cmake
+  * Update install files
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 27 Sep 2019 17:35:35 -0700
+
+kcachegrind (4:17.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Remove the unused python-dev, and qttools5-dev-tools build dependencies.
+  * Switch Format in copyright to https.
+  * Update lintian overrides.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 26 Jan 2018 07:15:44 +0100
+
+kcachegrind (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+  [ Maximiliano Curia ]
+  * Bump kde-l10n breaks/replaces versions
+  * Update uploaders list as requested by MIA team (Closes: #879316)
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Bump Standards-Version to 4.1.3, no changes required.
+  * Simplify watch file, and switch it to https.
+  * Simplify install files.
+  * Add the missing qttools5-dev build dependency. (Closes: #884022)
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will
+    drop translations.
+
+ -- Pino Toscano <pino@debian.org>  Thu, 28 Dec 2017 12:55:32 +0100
+
+kcachegrind (4:17.08.1-1) experimental; urgency=medium
+
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 13 Sep 2017 15:44:06 +0200
+
+kcachegrind (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 13:59:41 +0000
+
+kcachegrind (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:33:03 +0000
+
+kcachegrind (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:19:45 +0000
+
+kcachegrind (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:20:51 +0000
+
+kcachegrind (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:13:51 +0000
+
+kcachegrind (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:03:17 +0000
+
+kcachegrind (4:16.08.3-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Refresh patches
+
+  [ Maximiliano Curia ]
+  * New upstream release (16.08.3)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 21:04:38 +0100
+
+kcachegrind (4:16.08.0-1) unstable; urgency=medium
+
+  * New upstream release (16.08.0)
+  * Install qcachegrind.
+    Thanks to Phillip Berndt for reporting (Closes: 836937)
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 23:55:12 +0200
+
+kcachegrind (4:16.04.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.2).
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * Use the current default php version.
+    Thanks to Ondřej Surý <ondrej@debian.org> (Closes: #821509)
+  * Add lintian-overrides about php-script-but-no-phpX-cli-dep
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 21 May 2016 16:45:30 +0200
+
+kcachegrind (4:15.12.0-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:22:49 +0100
+
+kcachegrind (4:15.08.3-1) unstable; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:38:59 +0100
+
+kcachegrind (4:15.08.0-1) unstable; urgency=medium
+
+  * New upstream release (15.04.2).
+  * New upstream release (15.08.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 19 Sep 2015 19:10:40 +0200
+
+kcachegrind (4:14.12.2-1) experimental; urgency=medium
+
+  * Prepare Debian release.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 17 Feb 2015 11:37:35 +0100
+
+kcachegrind (4:14.12.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 08:15:38 -0800
+
+kcachegrind (4:14.12.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Remove kdelibs5-dev depend version as there was not a new release.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 16:02:17 +0100
+
+kcachegrind (4:14.11.97-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release candidate.
+  * Fix watch urls for new release location.
+  * Update Vcs urls for the new repository location.
+  * Update the maintainer.
+  * Suggest khelpcenter instead of khelpcenter4.
+  * PPA build
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 28 Nov 2014 21:23:11 +0100
+
+kcachegrind (4:4.14.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 20 Aug 2014 14:50:18 +0200
+
+kcachegrind (4:4.13.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Jul 2014 10:25:02 +0200
+
+kcachegrind (4:4.13.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 22 May 2014 16:20:53 +0200
+
+kcachegrind (4:4.12.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:24:18 +0200
+
+kcachegrind (4:4.12.3-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Mar 2014 00:06:14 +0100
+
+kcachegrind (4:4.12.2-1) experimental; urgency=medium
+
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * New upstream release.
+  * Bump kde-sc-dev-latest build dependency.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:31:50 +0100
+
+kcachegrind (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 14:25:35 +0100
+
+kcachegrind (4:4.11.2-1) experimental; urgency=low
+
+  * First release of kdesdk after being split by upstream.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 08 Oct 2013 10:58:20 +0200

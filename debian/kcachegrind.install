@@ -1,0 +1,7 @@
+usr/bin/kcachegrind
+usr/share/applications/org.kde.kcachegrind.desktop
+usr/share/doc/HTML/*/kcachegrind/
+usr/share/icons/hicolor/*/apps/kcachegrind.png
+usr/share/kcachegrind/
+usr/share/locale/
+usr/share/metainfo/org.kde.kcachegrind.appdata.xml
